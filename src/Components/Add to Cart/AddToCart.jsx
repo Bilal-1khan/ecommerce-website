@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
-import { useOutletContext } from 'react-router-dom';
+import { Link,useOutletContext } from 'react-router-dom';
 
 const AddToCart = () => {
   const { cart, setCart } = useOutletContext();
-  const [countQty,setCountQty] = useState(0)
-  const [itemsPrice,setItemsPrice] = useState(0)
-
-  
+  const [countQty,setCountQty] = useState(1)
 
 const decreaseQuantity=() =>{
     if (countQty==0) {
-        setCountQty(countQty)
+        setCountQty(0)
     }else{
         setCountQty(countQty-1)
     }
@@ -38,10 +35,10 @@ const increaseQuantity=() => {
 //     }
 //   };
 
-//   const removeFromCart = (index) => {
-//     const newCart = cart.filter((_, i) => i !== index);
-//     setCart(newCart);
-//   };
+  const removeFromCart = (index) => {
+    const newCart = cart.filter((_, i) => i !== index);
+    setCart(newCart);
+  };
 
   return (
     <div className="cart-wrapper w-full">
@@ -67,10 +64,12 @@ const increaseQuantity=() => {
                       </div>
                     </div>
                     <div>
-                        <div className='border-gray-200 border px-2 py-4 rounded-lg'>
+                        <div className='border-gray-200 border w-[200px] px-2 py-4 rounded-lg'>
                             <h1 className='text-2xl font-semibold'>Summary</h1>
-                            <p>Subtotal : {product.price}</p>
-                            <p>Shipping fee : {product.shippingFee}</p>
+                            <p className='font-semibold'>Subtotal : {product.price}</p>
+                            <p className='font-semibold'>Shipping fee : {product.shippingFee}</p>
+                            <p className='font-bold'>Total price : {(product.price*countQty)+product.shippingFee}</p>
+                            <Link to='/checkout'><button className='mt-4 text-white w-full  py-2 text-xl bg-red-500 rounded-xl'>Check out</button></Link>
                         </div>
                     </div>
                   </div>

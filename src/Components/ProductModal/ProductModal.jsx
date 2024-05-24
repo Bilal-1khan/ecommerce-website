@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ProductModal = ({ product, onClose }) => {
   const {
@@ -58,7 +59,9 @@ const ProductModal = ({ product, onClose }) => {
             {counter} 
             <button className='px-4 py-[2px] bg-gray-200 rounded-full' onClick={increaseCount}>+</button>
           </div>
-            <button className='bg-black text-white text-[15px] px-4 py-2 rounded-xl hover:bg-gray-400 hover:text-black'>Add to Cart</button>
+           <Link to='/addtocart'>
+           <button className='bg-black text-white text-[15px] px-4 py-2 rounded-xl hover:bg-gray-400 hover:text-black'>Add to Cart</button>
+           </Link>
         </div>
       </div>
     </div>

@@ -7,7 +7,8 @@ const ShoesCardData = [
         price:5000,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -17,7 +18,8 @@ const ShoesCardData = [
         price:2000,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -27,7 +29,8 @@ const ShoesCardData = [
         price:2980,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -37,7 +40,8 @@ const ShoesCardData = [
         price:5000,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -47,7 +51,8 @@ const ShoesCardData = [
         price:2000,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -57,7 +62,8 @@ const ShoesCardData = [
         price:2980,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -67,7 +73,8 @@ const ShoesCardData = [
         price:1590,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -77,7 +84,8 @@ const ShoesCardData = [
         price:5000,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -87,7 +95,8 @@ const ShoesCardData = [
         price:2000,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -97,7 +106,8 @@ const ShoesCardData = [
         price:2980,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -107,7 +117,8 @@ const ShoesCardData = [
         price:5000,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -117,7 +128,8 @@ const ShoesCardData = [
         price:2000,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -127,7 +139,8 @@ const ShoesCardData = [
         price:2980,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -137,7 +150,8 @@ const ShoesCardData = [
         price:1590,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
 ]
 

@@ -7,7 +7,8 @@ const ShopCardData = [
         price:2000,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -17,7 +18,8 @@ const ShopCardData = [
         price:1800,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -27,7 +29,8 @@ const ShopCardData = [
         price:1980,
         roundoffPrice:'.46',
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -37,7 +40,8 @@ const ShopCardData = [
         price:390,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -47,7 +51,8 @@ const ShopCardData = [
         price:3000,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -57,7 +62,8 @@ const ShopCardData = [
         price:1800,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -67,7 +73,8 @@ const ShopCardData = [
         price:1980,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -77,7 +84,8 @@ const ShopCardData = [
         price:390,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -87,7 +95,8 @@ const ShopCardData = [
         price:2000,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -97,7 +106,8 @@ const ShopCardData = [
         price:1800,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -107,7 +117,8 @@ const ShopCardData = [
         price:1980,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -117,7 +128,8 @@ const ShopCardData = [
         price:390,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -127,7 +139,8 @@ const ShopCardData = [
         price:3000,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -137,7 +150,8 @@ const ShopCardData = [
         price:1800,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -147,7 +161,8 @@ const ShopCardData = [
         price:1980,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -157,7 +172,8 @@ const ShopCardData = [
         price:390,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -167,7 +183,8 @@ const ShopCardData = [
         price:5400,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -177,7 +194,8 @@ const ShopCardData = [
         price:3800,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -187,7 +205,8 @@ const ShopCardData = [
         price:4980,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -197,7 +216,8 @@ const ShopCardData = [
         price:1590,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -207,7 +227,8 @@ const ShopCardData = [
         price:5400,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -217,7 +238,8 @@ const ShopCardData = [
         price:3800,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -227,7 +249,8 @@ const ShopCardData = [
         price:4980,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
     {
         id:`${Math.random()}`,
@@ -237,7 +260,8 @@ const ShopCardData = [
         price:1590,
         roundoffPrice:.46,
         sale:'Extra 2% off with coins',
-        shippingPrice:"Free shipping over PKR1780"
+        shippingPrice:"Free shipping over PKR1780",
+        shippingFee:150
     },
 ]
 

@@ -14,6 +14,7 @@ const HomeCard = ({ product, onPreviewClick, addToCart }) => {
         <p className="price text-xl font-semibold cursor-default"><span className="text-sm">PKR</span>{price}<span className="text-sm cursor-default">{roundoffPrice}</span></p>
         <p className="text-red-500 font-medium cursor-default">{sale}</p>
         <p className='text-gray-400 cursor-default'>+Shipping: {shippingPrice}</p>
+        <p className='text-gray-400 cursor-default'>Shipping Fee {shippingFee}</p>
         <div className="mt-5 flex justify-between cursor-default">
           <button 
             className="rounded-full bg-black text-white py-2 px-5"

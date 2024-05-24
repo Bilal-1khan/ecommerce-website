@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom'
 
 const App = () => {
   const [cart, setCart] = useState([]);
+  const [warning,setWarning] = useState(false)
 
   const addToCart = (data) => {
     let isPresent = false
@@ -13,16 +14,20 @@ const App = () => {
         isPresent=true
       }
     })
-    if (isPresent) return;
-
+    if (isPresent) {
+      setWarning(true)
+      setInterval(()=>{
+        setWarning(false)
+      },40000)
+      return;
+    }
     setCart([...cart,data])
-    // setCart((prevCart) => [...prevCart, product]);
-  };
 
+  };
   return (
     <>
       <Header size={cart.length} />
-      <Outlet context={{ cart, addToCart,setCart}} />
+      <Outlet context={{ cart, addToCart,setCart,warning}} />
       <Footer />
     </>
   )
