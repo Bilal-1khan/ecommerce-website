@@ -6,7 +6,7 @@ const InputSearchBar = ({ onSearch }) => {
           <div className="search-bar text-center my-10">
             <input
                onChange={(e) => { onSearch(e.target.value) }}
-               className='searchbar w-96 text-black p-1 px-2 outline-none rounded-xl'
+               className='searchbar w-[500px] text-black p-1 px-2 py-3 outline-none rounded-xl'
                placeholder="Search items"
                type="text"
             />
