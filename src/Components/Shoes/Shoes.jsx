@@ -2,9 +2,9 @@ import React,{useState} from 'react'
 import ShoesCard from './ShoesCard';
 import ShoesCardData from './ShoesCardData';
 import ProductModal from '../ProductModal/ProductModal'
-
+import { useOutletContext } from 'react-router-dom';
 const Shoes = () => {
-
+  const { addToCart } = useOutletContext();
   const [selectedProduct, setSelectedProduct] = useState(null); 
   const [isModalOpen, setIsModalOpen] = useState(false); 
 
@@ -31,6 +31,7 @@ const Shoes = () => {
                       key={product.id}
                       product={product}
                       onPreviewClick={handlePreviewClick}
+                      addToCart={addToCart}
                     />
                   );
                 })}

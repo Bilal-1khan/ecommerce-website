@@ -8,6 +8,7 @@ import Shop from './Components/Shop/Shop'
 import MensClothing from './Components/MensClothing/MensClothing'
 import Shoes from './Components/Shoes/Shoes'
 import NewArrivals from './Components/NewArrivals/NewArrivals'
+import AddToCart from './Components/Add to Cart/AddToCart'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route path='/menclothing' element={<MensClothing/>}/>
       <Route path='/shoes' element={<Shoes/>}/>
       <Route path='/newarrivals' element={<NewArrivals/>}/>
+      <Route path='/addtocart' element={<AddToCart/>}/>
     </Route>
   )
 )

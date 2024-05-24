@@ -1,6 +1,6 @@
 import React from 'react'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-const ShoesCard = ({product,onPreviewClick }) => {
+const ShoesCard = ({product,onPreviewClick,addToCart }) => {
     const {
       image,
       productIntro,
@@ -28,9 +28,9 @@ const ShoesCard = ({product,onPreviewClick }) => {
               >
                 Preview
               </button>
-              <button className="bg-black rounded-full py-2 px-5">
-                <ShoppingCartOutlinedIcon className="text-white"/>
-              </button>
+              <button onClick={() => addToCart(product)} className="bg-black rounded-full py-2 px-5">
+            <ShoppingCartOutlinedIcon className="text-white"/>
+          </button>
             </div>
           </div>
         </div> 

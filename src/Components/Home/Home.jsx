@@ -3,11 +3,13 @@ import HomeCard from "./HomeCard";
 import { HomeCardData } from "./HomeCardData";
 import InputSearchBar from "../InputSearchBox/InputSearchBar";
 import ProductModal from '../ProductModal/ProductModal';
+import { useOutletContext } from 'react-router-dom';
 
 const Home = () => {
+  const { addToCart } = useOutletContext();
   const [data, setData] = useState(HomeCardData);
-  const [selectedProduct, setSelectedProduct] = useState(null); 
-  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const onSearch = (val) => {
     if (val.trim()) {
@@ -44,6 +46,7 @@ const Home = () => {
                       key={product.id}
                       product={product}
                       onPreviewClick={handlePreviewClick}
+                      addToCart={addToCart} 
                     />
                   );
                 })}

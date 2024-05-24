@@ -3,8 +3,10 @@ import ShopCard from './ShopCard'
 import { ShopCardData } from './ShopCardData'
 import InputSearchBar from '../InputSearchBox/InputSearchBar'
 import ProductModal from '../ProductModal/ProductModal'
+import { useOutletContext } from 'react-router-dom';
 
 const Shop = () => {
+  const { addToCart } = useOutletContext();
   const [data, setData] = useState(ShopCardData);
   const [selectedProduct, setSelectedProduct] = useState(null); 
   const [isModalOpen, setIsModalOpen] = useState(false); 
@@ -43,6 +45,7 @@ const Shop = () => {
                       key={product.id}
                       product={product}
                       onPreviewClick={handlePreviewClick}
+                      addToCart={addToCart}
                     />
                   );
                 })}

@@ -8,6 +8,7 @@ const ProductModal = ({ product, onClose }) => {
     roundoffPrice,
     sale,
     shippingPrice,
+    shippingFee
   } = product;
 
   const [counter,setCounter] = useState(0)
@@ -39,8 +40,6 @@ const ProductModal = ({ product, onClose }) => {
           Close
         </button>
         </div>
-
-          
         <div>
         <div className="imgDiv w-[40%] rounded-2xl flex-1">
           <img className='w-full  rounded-2xl' src={image} alt="product-img" />
@@ -53,17 +52,12 @@ const ProductModal = ({ product, onClose }) => {
           <p className='text-gray-400 cursor-default'>+Shipping: {shippingPrice}</p>
         </div>
         </div>
-       
-        
-
         <div className="qtyCount flex justify-between gap-1 items-center">
           <div className='flex gap-2'>
           <button className='px-4 py-[2px] bg-gray-200 rounded-full' onClick={decreaseCount}>-</button> 
             {counter} 
             <button className='px-4 py-[2px] bg-gray-200 rounded-full' onClick={increaseCount}>+</button>
           </div>
-            
-
             <button className='bg-black text-white text-[15px] px-4 py-2 rounded-xl hover:bg-gray-400 hover:text-black'>Add to Cart</button>
         </div>
       </div>
