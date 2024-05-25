@@ -3,11 +3,24 @@ import MensClothingCard from './MensClothingCard';
 import MensClothesCardData from './MensClothesCardData';
 import ProductModal from '../ProductModal/ProductModal'
 import { useOutletContext } from 'react-router-dom';
+import InputSearchBar from "../InputSearchBox/InputSearchBar";
 
 const MensClothing = () => {
   const { addToCart,warning } = useOutletContext();
   const [selectedProduct, setSelectedProduct] = useState(null); 
   const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [data, setData] = useState(MensClothesCardData);
+
+  const onSearch = (val) => {
+    if (val.trim()) {
+      const filterData = MensClothesCardData.filter((i) => {
+        return i.name.toLowerCase().includes(val.toLowerCase());
+      });
+      setData(filterData);
+    } else {
+      setData(MensClothesCardData);
+    }
+  };
 
   const handlePreviewClick = (product) => {
     setSelectedProduct(product);
@@ -29,9 +42,10 @@ const MensClothing = () => {
             warning && <span className="float-right bg-slate-200 py-2 px-2 mb-3 text-[13px] rounded-xl text-red-500">The item is already added</span>
           }
           <br />
+          <InputSearchBar onSearch={onSearch} />
             </div>
               <div className="grid grid-cols-4 gap-1 mt-8">
-                {MensClothesCardData.map((product) => {
+                {data.map((product) => {
                   return (
                     <MensClothingCard
                       key={product.id}

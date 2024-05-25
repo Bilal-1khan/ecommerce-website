@@ -35,7 +35,7 @@ const ProductModal = ({ product, onClose }) => {
       <div className="bg-white rounded-lg p-4  w-[500px]">
         <div>
         <button 
-          className="text-black float-right font-semibold text-[15px]" 
+          className="text-black float-right font-semibold text-[15px] hover:text-red-500" 
           onClick={onClose}
         >
           Close

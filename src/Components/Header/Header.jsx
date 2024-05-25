@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import SearchIcon from "@mui/icons-material/Search";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import DropDownItems from './DropDownItems';
+
+
 
 const Header = ({ size }) => {
+  const [open,setOpen] =useState(false)
   return (
     <header className="bg-black px-7 py-4 w-full">
       <div className="my-0 mx-auto max-w-[1240px]">
@@ -13,10 +16,19 @@ const Header = ({ size }) => {
           <div className="logo">
             <Link to="/" className="text-[30px] font-medium text-white">DealsIn</Link>
           </div>
-          <div className="profileDrop cursor-pointer flex items-center justify-around gap-2">
-            <div className="profile">
+          <div className="profileDrop cursor-pointer relative flex items-center justify-around gap-2">
+            <div onClick={()=>setOpen(!open)} className="profile">
               <PermIdentityOutlinedIcon style={{ fontSize: "2rem" }} className="text-white" />
               <ArrowDropDownIcon className="text-4xl text-white" />
+              <div className={`dropdn absolute top-[33px] right-[36px] p-1 px-2 bg-white rounded-lg w-[200px] ${open?"active":"hidden"}`}>
+                <div className={`flex items-center gap-3 text-[16px] py-1 font-semibold border-b-slate-200 border-b`}>
+                  <span className='bg-gray-300 rounded-full p-1'><PermIdentityOutlinedIcon className='text-black rounded-full' style={{ fontSize: "2rem" }}/></span>Welcome,
+                  <span className='font-bold'>User</span>
+                </div>
+                <ul className='mt-2'>
+                <DropDownItems/>
+                </ul>
+              </div>
             </div>
             <div className="addCart relative">
               <Link to="/addtocart">

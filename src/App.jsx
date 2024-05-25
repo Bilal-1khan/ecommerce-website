@@ -18,7 +18,7 @@ const App = () => {
       setWarning(true)
       setInterval(()=>{
         setWarning(false)
-      },40000)
+      },4000)
       return;
     }
     setCart([...cart,data])
