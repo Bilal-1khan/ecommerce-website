@@ -21,20 +21,6 @@ const AddToCart = () => {
     }
   };
 
-  //   const increaseQuantity = (index) => {
-  //     const newCart = [...cart];
-  //     newCart[index].quantity += 1;
-  //     setCart(newCart);
-  //   };
-
-  //   const decreaseQuantity = (index) => {
-  //     const newCart = [...cart];
-  //     if (newCart[index].quantity > 1) {
-  //       newCart[index].quantity -= 1;
-  //       setCart(newCart);
-  //     }
-  //   };
-
   const removeFromCart = (index) => {
     const newCart = cart.filter((_, i) => i !== index);
     setCart(newCart);
